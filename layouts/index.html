@@ -1,0 +1,217 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="{{ $.Param "meta.description" }}">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
+  <title>{{ .Site.Params.title }} &ndash; {{ $.Param "long_title" }}</title>
+  {{ $style := resources.Get "scss/main.scss" | toCSS | postCSS | minify | fingerprint }}
+  <link href="{{ $style.RelPermalink }}" rel="stylesheet">
+</head>
+
+<body>
+
+  {{ partial "header.html" . }}
+
+  <main>
+
+    <section class="hero" data-section-name="home">
+      <div class="container">
+        <div class="row">
+          <div class="col col-lg-7">
+            <h1 data-scroll>{{ $.Param "content.sections.hero.headline" }}</h1>
+          </div>
+        </div>
+      </div>
+      <img src="/img/art/network.png" alt="art" class="art">
+    </section>
+
+    <section class="tomorrows-currency snap" data-section-name="tomorrows-currency">
+      <div class="ghost">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col col-lg-5">
+            <h2 data-scroll>{{ $.Param "content.sections.tomorrows_currency.headline" | safeHTML }}</h2>
+            <p class="feature-description" data-scroll>{{ (index .Params.content.sections.tomorrows_currency.features 0).description }}</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col d-flex">
+            <div class="features">
+              {{ range $feature := $.Param "content.sections.tomorrows_currency.features" }}
+              <div data-description="{{ $feature.description }}">
+                {{ $feature.label }}
+              </div>
+              {{ end }}
+            </div>
+          </div>
+        </div>
+      </div>
+      <img src="/img/art/rings.png" alt="art" class="art">
+    </section>
+
+    <section class="people-first" data-section-name="people-first">
+      <div class="container">
+        <div class="row spb1">
+          <div class="col col-lg-5">
+            <h2 data-scroll>{{ $.Param "content.sections.people_first.headline" }}</h2>
+            <p data-scroll>{{ $.Param "content.sections.people_first.description" }}</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col col-lg-3 offset-lg-5">
+            <h3 data-scroll>{{ $.Param "content.sections.people_first.core_principles.headline" }}</h3>
+          </div>
+          <div class="col col-lg-4">
+            {{ range $principle := $.Param "content.sections.people_first.core_principles.principles" }}
+            <div class="principle">
+              <h4 class="h5" data-scroll>{{ $principle.headline }}</h4>
+              <p data-scroll>{{ $principle.subhead }}</p>
+            </div>
+            {{ end }}
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="inclusive-architecture" data-section-name="inclusive-architecture">
+      <div class="container">
+        <div class="row">
+          <div class="col col-lg-5">
+            <h2 data-scroll>{{ $.Param "content.sections.inclusive_architecture.headline" }}</h2>
+            {{ $.Param "content.sections.inclusive_architecture.body1" | safeHTML }}
+          </div>
+          <div class="col col-lg-6 offset-lg-1 d-flex">
+            <img src="/img/{{ $.Param "content.sections.inclusive_architecture.image.x1" }}" srcset="/img/{{ $.Param "content.sections.inclusive_architecture.image.x1" }} 1x, /img/{{ $.Param "content.sections.inclusive_architecture.image.x2" }} 2x" alt="{{ $.Param "content.sections.inclusive_architecture.image.alt" }}" class="inclusive-image mtg1">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col col-lg-5 offset-lg-1 d-flex">
+            <div class="architecture-diagram mvg1">
+              <div class="architecture-layer">
+                {{ $.Param "content.sections.inclusive_architecture.diagram.layer1" }}
+              </div>
+              <div class="architecture-layer">
+                {{ $.Param "content.sections.inclusive_architecture.diagram.layer2" }}
+              </div>
+              <div class="architecture-layer">
+                {{ $.Param "content.sections.inclusive_architecture.diagram.layer3" }}
+              </div>
+            </div>
+          </div>
+          <div class="col col-lg-5 offset-lg-1">
+            {{ $.Param "content.sections.inclusive_architecture.body2" | safeHTML }}
+          </div>
+      </div>
+    </section>
+
+    <section class="alices-story" data-section-name="alices-story">
+      <div class="container">
+        <div class="row">
+          <div class="col col-lg-6 offset-lg-3 text-center">
+            <h2 data-scroll>{{ $.Param "content.sections.alices_story.headline" }}</h2>
+            <p data-scroll>{{ $.Param "content.sections.alices_story.subhead" }}</p>
+          </div>
+        </div>
+        
+        <div class="story">
+          {{ range $slide := $.Param "content.sections.alices_story.slides" }}
+          <div>
+            <div class="row">
+              <div class="story-image col col-lg-5 offset-lg-1 mbg1">
+                <img src="/img/story/{{ $slide.image }}.png" srcset="/img/story/{{ $slide.image }}.png 1x, /img/story/{{ $slide.image }}@2x.png 2x" alt="{{ $slide.image_alt }}">
+              </div>
+              <div class="story-text col col-lg-4 offset-lg-1">
+                {{ $slide.body }}
+              </div>
+            </div>
+          </div>
+          {{ end }}
+        </div>
+
+        <div class="sticky-bottom">
+          <div class="row">
+            <div class="story-dots col col-lg-4 offset-lg-7">
+            </div>
+          </div>
+        </div>
+       
+      </div>
+    </section>
+
+    <section class="about-nzia" data-section-name="about-nzia">
+      <div class="container">
+        <div class="row">
+          <div class="col col-lg-5 offset-lg-6">
+            <h2 data-scroll>{{ $.Param "content.sections.about_nzia.headline" }}</h2>
+            {{ $.Param "content.sections.about_nzia.body" | safeHTML }}
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="get-in-touch" data-section-name="get-in-touch">
+      <div class="container">
+        <div class="row">
+          <div class="col col-lg-6 offset-lg-6">
+            <h2 data-scroll>{{ $.Param "content.sections.get_in_touch.headline" }}</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col col-lg-5">
+            <form data-scroll>
+              <div class="form-field">
+                <input name="name" type="text"  placeholder="{{ $.Param "content.sections.get_in_touch.form.fields.name" }}">
+              </div>
+              <div class="form-field">
+                <input name="email" type="email" placeholder="{{ $.Param "content.sections.get_in_touch.form.fields.email" }}">
+              </div>
+              <div class="form-field">
+                <input name="organization" type="text" placeholder="{{ $.Param "content.sections.get_in_touch.form.fields.organization" }}">
+              </div>
+              <div class="form-field">
+                <textarea rows="5" name="whats_up" placeholder="{{ $.Param "content.sections.get_in_touch.form.fields.whats_up" }}"></textarea>
+              </div>
+              <div class="form-footer">
+                <div class="form-helper">
+                  {{ $.Param "content.sections.get_in_touch.form.required" }}
+                </div>
+                <div>
+                  <button type="submit" class="btn">{{ $.Param "content.sections.get_in_touch.form.button" }}</button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="col col-lg-6 offset-lg-1">
+            <p class="mbg1" data-scroll>{{ $.Param "content.sections.get_in_touch.subhead" }}</p>
+            <a href="mailto:{{ $.Param "content.sections.get_in_touch.email" }}" class="h5" data-scroll>{{ $.Param "content.sections.get_in_touch.email" }}</a>
+          </div>
+        </div>
+
+  </main>
+
+  {{ partial "footer.html" . }}
+
+  <div class="swarm"></div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  {{ $scrollify := resources.Get "js/jquery.scrollify.js" }}
+  {{ $scrolltrigger := resources.Get "js/ScrollTrigger.min.js" }}
+  {{ $slick := resources.Get "js/slick.min.js" }}
+  {{ $swarm := resources.Get "js/swarm.js" }}
+  {{ $main := resources.Get "js/main.js" }}
+  {{ $js := slice $scrollify $scrolltrigger $slick $swarm $main | resources.Concat "js/bundle.js" | resources.Fingerprint }}
+  <script src="{{ $js.RelPermalink }}" type="text/javascript"></script>
+  {{ template "_internal/google_analytics_async.html" . }}
+</body>
+
+</html>

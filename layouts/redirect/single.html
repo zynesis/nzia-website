@@ -1,0 +1,12 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="refresh" content="{{ cond (isset $.Params "delay") ($.Param "delay") "0" }};url={{ $.Param "target_url" }}"> 
+  <meta name="description" content="Redirecting to {{ $.Param "target_title" }}">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
+  <title>Redirecting to {{ $.Param "target_title" }}</title>
+</head>
+<body></body>
+</html>
