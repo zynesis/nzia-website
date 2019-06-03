@@ -30,10 +30,10 @@ var self = window;
     FPS = 60,
 
     /*
-		 * List colors.
-		 */
+    * List colors.
+    */
 
-    colors = ['#fff', '#fff'];
+    colors = ['#FFB4B4', '#98F2C1', '#7CEDFF', '#FFF1B9'];
 
   /*
   * Init.
@@ -293,7 +293,7 @@ var self = window;
     [].forEach.call(art, function (particle, index) {
       context.save();
       context.globalAlpha = particle.alpha;
-      context.fillStyle = 'rgb(255, 255, 255)';
+      context.fillStyle = particle.color;
       context.beginPath();
       context.arc(particle.x, particle.y, particle.radius, 0, Math.PI * 2);
       context.fill();
