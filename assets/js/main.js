@@ -91,11 +91,6 @@ $(function () {
       } else {
         $.scrollify.enable();
       }
-    },
-    before: function(index, sections)  {
-      $('section').removeClass('scroll-current');
-      $(sections[index]).addClass('scroll-current');
-      window.updateArt();
     }
   });
 
@@ -108,8 +103,19 @@ document.addEventListener('DOMContentLoaded', function () {
       visible: 'scroll-visible',
       hidden: 'scroll-hidden'
     },
-    once: true
+    once: false,
   }, document.body, window);
 
   trigger.callScope = scope;
+
+  scope.updateArt = function (artPerc) {
+    var artPerc = artPerc.replace(/\s/g, '').split(',');
+    console.log(artPerc);
+    $('.swarm').fadeIn();
+    updateArt(artPerc[0], artPerc[1]);
+  };
+
+  scope.hideArt = function (value) {
+    $('.swarm').fadeOut();
+  };
 });

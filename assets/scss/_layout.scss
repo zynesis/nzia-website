@@ -53,6 +53,17 @@ main {
       padding-top: $section-padding-top-lg;
       padding-bottom: $section-padding-bottom-lg;
     }
+
+    .scroll-detector {
+      width: 10px;
+      height: 10px;
+      position: absolute;
+      left: 50vw;
+      top: 50vh;
+      right: 50vw;
+      bottom: 50vh;
+      background-color: red;
+    }
   }
 }
 
@@ -375,13 +386,13 @@ section.get-in-touch {
       resize: none;
 
       &::placeholder {
-        color: $color-ui-dark;
+        color: $color-ui-medium;
         transition: $form-control-transition;
       }
 
       &:focus {
         &::placeholder {
-          color: $color-ui-medium;
+          color: $color-ui-dark;
         }
       }
     }

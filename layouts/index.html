@@ -17,7 +17,7 @@
 
   <main>
 
-    <section class="hero" data-section-name="home">
+    <section class="hero">
       <div class="container">
         <div class="row">
           <div class="col col-lg-7">
@@ -25,10 +25,11 @@
           </div>
         </div>
       </div>
+      <div class="scroll-detector" data-scroll="toggle(.section-visible, .section-hidden)" data-scroll-showCallback="updateArt(0.7,0.3)"></div>
       <img src="/img/art/network.png" alt="art" class="art">
     </section>
 
-    <section class="tomorrows-currency snap" data-section-name="tomorrows-currency">
+    <section class="tomorrows-currency snap">
       <div class="ghost">
         <div></div>
         <div></div>
@@ -40,8 +41,8 @@
       <div class="container">
         <div class="row">
           <div class="col col-lg-5">
-            <h2 data-scroll>{{ $.Param "content.sections.tomorrows_currency.headline" | safeHTML }}</h2>
-            <p class="feature-description" data-scroll>{{ (index .Params.content.sections.tomorrows_currency.features 0).description }}</p>
+            <h2 data-scroll="once">{{ $.Param "content.sections.tomorrows_currency.headline" | safeHTML }}</h2>
+            <p class="feature-description" data-scroll="once">{{ (index .Params.content.sections.tomorrows_currency.features 0).description }}</p>
           </div>
         </div>
         <div class="row">
@@ -56,38 +57,41 @@
           </div>
         </div>
       </div>
-      <img src="/img/art/rings.png" alt="art" class="art">
+      <div class="scroll-detector" data-scroll="toggle(.section-visible, .section-hidden)" data-scroll-showCallback="updateArt(0.5,0.5)"></div>
+      <img src="/img/art/web.png" alt="art" class="art">
     </section>
 
-    <section class="people-first" data-section-name="people-first">
+    <section class="people-first">
       <div class="container">
         <div class="row spb1">
           <div class="col col-lg-5">
-            <h2 data-scroll>{{ $.Param "content.sections.people_first.headline" }}</h2>
-            <p data-scroll>{{ $.Param "content.sections.people_first.description" }}</p>
+            <h2 data-scroll="once">{{ $.Param "content.sections.people_first.headline" }}</h2>
+            <p data-scroll="once">{{ $.Param "content.sections.people_first.description" }}</p>
           </div>
         </div>
         <div class="row">
           <div class="col col-lg-3 offset-lg-5">
-            <h3 data-scroll>{{ $.Param "content.sections.people_first.core_principles.headline" }}</h3>
+            <h3 data-scroll="once">{{ $.Param "content.sections.people_first.core_principles.headline" }}</h3>
           </div>
           <div class="col col-lg-4">
             {{ range $principle := $.Param "content.sections.people_first.core_principles.principles" }}
             <div class="principle">
-              <h4 class="h5" data-scroll>{{ $principle.headline }}</h4>
-              <p data-scroll>{{ $principle.subhead }}</p>
+              <h4 class="h5" data-scroll="once">{{ $principle.headline }}</h4>
+              <p data-scroll="once">{{ $principle.subhead }}</p>
             </div>
             {{ end }}
           </div>
         </div>
       </div>
+      <div class="scroll-detector" data-scroll="toggle(.section-visible, .section-hidden)" data-scroll-showCallback="updateArt(0.4,0.6)"></div>
+      <img src="/img/art/people.png" alt="art" class="art">
     </section>
 
-    <section class="inclusive-architecture" data-section-name="inclusive-architecture">
+    <section class="inclusive-architecture">
       <div class="container">
         <div class="row">
           <div class="col col-lg-5">
-            <h2 data-scroll>{{ $.Param "content.sections.inclusive_architecture.headline" }}</h2>
+            <h2 data-scroll="once">{{ $.Param "content.sections.inclusive_architecture.headline" }}</h2>
             {{ $.Param "content.sections.inclusive_architecture.body1" | safeHTML }}
           </div>
           <div class="col col-lg-6 offset-lg-1 d-flex">
@@ -112,14 +116,16 @@
             {{ $.Param "content.sections.inclusive_architecture.body2" | safeHTML }}
           </div>
       </div>
+      <div class="scroll-detector" data-scroll="toggle(.section-visible, .section-hidden)" data-scroll-showCallback="hideArt()"></div>
+      <!-- <img src="/img/art/empty.png" alt="art" class="art"> -->
     </section>
 
-    <section class="alices-story" data-section-name="alices-story">
+    <section class="alices-story">
       <div class="container">
         <div class="row">
           <div class="col col-lg-6 offset-lg-3 text-center">
-            <h2 data-scroll>{{ $.Param "content.sections.alices_story.headline" }}</h2>
-            <p data-scroll>{{ $.Param "content.sections.alices_story.subhead" }}</p>
+            <h2 data-scroll="once">{{ $.Param "content.sections.alices_story.headline" }}</h2>
+            <p data-scroll="once">{{ $.Param "content.sections.alices_story.subhead" }}</p>
           </div>
         </div>
         
@@ -146,29 +152,33 @@
         </div>
        
       </div>
+      <div class="scroll-detector" data-scroll="toggle(.section-visible, .section-hidden)" data-scroll-showCallback="hideArt()"></div>
+      <!-- <img src="/img/art/empty.png" alt="art" class="art"> -->
     </section>
 
-    <section class="about-nzia" data-section-name="about-nzia">
+    <section class="about-nzia">
       <div class="container">
         <div class="row">
           <div class="col col-lg-5 offset-lg-6">
-            <h2 data-scroll>{{ $.Param "content.sections.about_nzia.headline" }}</h2>
+            <h2 data-scroll="once">{{ $.Param "content.sections.about_nzia.headline" }}</h2>
             {{ $.Param "content.sections.about_nzia.body" | safeHTML }}
           </div>
         </div>
       </div>
+      <div class="scroll-detector" data-scroll="toggle(.section-visible, .section-hidden)" data-scroll-showCallback="updateArt(0.4,0.5)"></div>
+      <img src="/img/art/map.png" alt="art" class="art">
     </section>
 
-    <section class="get-in-touch" data-section-name="get-in-touch">
+    <section class="get-in-touch">
       <div class="container">
         <div class="row">
           <div class="col col-lg-6 offset-lg-6">
-            <h2 data-scroll>{{ $.Param "content.sections.get_in_touch.headline" }}</h2>
+            <h2 data-scroll="once">{{ $.Param "content.sections.get_in_touch.headline" }}</h2>
           </div>
         </div>
         <div class="row">
           <div class="col col-lg-5">
-            <form data-scroll>
+            <form data-scroll="once">
               <div class="form-field">
                 <input name="name" type="text"  placeholder="{{ $.Param "content.sections.get_in_touch.form.fields.name" }}">
               </div>
@@ -192,10 +202,14 @@
             </form>
           </div>
           <div class="col col-lg-6 offset-lg-1">
-            <p class="mbg1" data-scroll>{{ $.Param "content.sections.get_in_touch.subhead" }}</p>
-            <a href="mailto:{{ $.Param "content.sections.get_in_touch.email" }}" class="h5" data-scroll>{{ $.Param "content.sections.get_in_touch.email" }}</a>
+            <p class="mbg1" data-scroll="once">{{ $.Param "content.sections.get_in_touch.subhead" }}</p>
+            <a href="mailto:{{ $.Param "content.sections.get_in_touch.email" }}" class="h5" data-scroll="once">{{ $.Param "content.sections.get_in_touch.email" }}</a>
           </div>
         </div>
+      </div>
+      <div class="scroll-detector" data-scroll="toggle(.section-visible, .section-hidden)" data-scroll-showCallback="updateArt(0.6,0.7)"></div>
+      <img src="/img/art/talktous.png" alt="art" class="art">
+    </section>
 
   </main>
 
