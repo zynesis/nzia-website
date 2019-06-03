@@ -203,15 +203,10 @@ section.hero {
     width: 144px;
     height: 96px;
     background-color: red;
-    position: absolute;
+    position: fixed;
     right: 0;
     top: 128px;
     text-decoration: none;
-    transition: width 0.3s ease;
-
-    &.open {
-      transition: all 0.3s ease;
-    }
 
     @include media(">lg") {
       width: 192px;
@@ -254,6 +249,18 @@ section.hero {
       display: block;
       font-size: $body2-font-size;
       line-height: 2.0rem;
+    }
+  }
+
+  &.hide-latest {
+    .latest {
+      opacity: 0;
+    }
+  }
+
+  &.show-latest {
+    .latest {
+      opacity: 1;
     }
   }
 }

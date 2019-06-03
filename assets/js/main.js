@@ -110,6 +110,8 @@ document.addEventListener('DOMContentLoaded', function () {
   trigger.callScope = scope;
 
   scope.updateArt = function (artPerc) {
+    $(this).closest('.hero').find('.latest').delay(500).fadeIn('slow');
+
     $('.scroll-detector').removeClass('latest-scroll-detected');
     $(this).addClass('latest-scroll-detected');
     $('.swarm').fadeIn();
@@ -120,4 +122,8 @@ document.addEventListener('DOMContentLoaded', function () {
   scope.hideArt = function (value) {
     $('.swarm').fadeOut();
   };
+
+  scope.hideLatest = function() {
+    $('.latest').fadeOut();
+  }
 });
