@@ -9,7 +9,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
   <title>NZIA &ndash; Enabling transactions for everyone, anywhere, anytime.</title>
   
-  <link href="/scss/main.min.8f5361294c20d35e397f2a5f6567990192244db169f8d922196678a4de2d264b.css" rel="stylesheet">
+  <link href="/scss/main.min.9586729b3a86e96d1c557aae8f315908d6a0c23115b9282dec8960e5d5a019db.css" rel="stylesheet">
 </head>
 
 <body>
@@ -36,12 +36,21 @@
       <div class="container">
         <div class="row">
           <div class="col col-lg-7">
-            <h1 data-scroll>Enabling transactions for everyone, anywhere, anytime.</h1>
+            <h1 data-scroll="once">Enabling transactions for everyone, anywhere, anytime.</h1>
           </div>
         </div>
       </div>
-      <div class="scroll-detector" data-scroll="toggle(.section-visible, .section-hidden)" data-scroll-showCallback="updateArt(0.7,0.5)"></div>
+      <div class="scroll-detector" data-scroll="toggle(.section-visible, .section-hidden)" data-scroll-showCallback="updateArt(0.7,0.5)" data-scroll-hideCallback="hideLatest()"></div>
       <img src="/img/art/globe.png" alt="art" class="art">
+      <a href="/pr/central-bank-of-the-bahamas" class="latest">
+        <div class="thumb">
+          <div class="thumb-1x"
+            style="background-image:url(/img/latest/the-bahamas-thumb.jpg);"></div>
+          <div class="thumb-2x"
+            style="background-image:url(/img/latest/the-bahamas-thumb@2x.jpg);"></div>
+        </div>
+        <span>Central Bank of The Bahamas</span>
+      </a>
     </section>
 
     <section class="tomorrows-currency snap">
@@ -353,7 +362,7 @@
   
   
   
-  <script src="/js/bundle.b2c222041a532c370c9f592ae05399604ec7e9ab54de768ce2d6e9e1d3157215.js" type="text/javascript"></script>
+  <script src="/js/bundle.83af1c9cdb5b2a1e84b35699b9b15d79a98f286620c1bd2f11bb52f757ddc14b.js" type="text/javascript"></script>
   
 </body>
 

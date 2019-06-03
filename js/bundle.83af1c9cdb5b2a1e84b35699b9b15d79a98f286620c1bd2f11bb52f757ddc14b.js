@@ -928,7 +928,9 @@ var self = window;
       else {
         canvas.addEventListener('mousemove', onMouseMove, false);
       }
-      window.onresize = onResize;
+      window.addEventListener("resize", debounce(function (e) {
+        onResize();
+      }));
       updateArt(0.7, 0.5); // should be the same as hero
       loop();
     } else {
@@ -962,6 +964,18 @@ var self = window;
 
   function scrollY() {
     return window.pageYOffset || window.document.documentElement.scrollTop;
+  }
+
+  /*
+  * Debounce events
+  */
+
+  function debounce(func) {
+    var timer;
+    return function (event) {
+      if (timer) clearTimeout(timer);
+      timer = setTimeout(func, 200, event);
+    };
   }
 
   /*
@@ -1046,7 +1060,7 @@ var self = window;
     clear();
     nextArt = [];
 
-    var art = document.querySelector(".section-visible + .art") ? document.querySelector(".section-visible + .art") : document.querySelector(".hero .art");
+    var art = document.querySelector(".latest-scroll-detected + .art") ? document.querySelector(".latest-scroll-detected + .art") : document.querySelector(".section-visible + .art");
 
     var artPosX = (artPercX ? canvas.width * artPercX : canvas.width * 0.5) - art.width / 2;
     var artPosY = (artPercY ? canvas.height * artPercY : canvas.height * 0.5) - art.height / 2;
@@ -1087,23 +1101,14 @@ var self = window;
 
   function updateTransition() {
     [].forEach.call(nextArt, function (particle, index) {
-
       if (!art[index].interactive) {
-
         art[index].x += ((particle.x + Math.cos(particle.angle + index) * particle.orbit) - art[index].x) * 0.08;
         art[index].y += ((particle.y + Math.sin(particle.angle + index) * particle.orbit) - art[index].y) * 0.08;
-
-      }
-
-      else {
-
+      } else {
         art[index].x += ((mouse.x + Math.sin(particle.angle) * 30) - art[index].x) * 0.08;
         art[index].y += ((mouse.y + Math.cos(particle.angle) * 30) - art[index].y) * 0.08;
-
       }
-
       particle.angle += 0.08;
-
     });
 
     // Remove extra particles
@@ -1334,18 +1339,26 @@ document.addEventListener('DOMContentLoaded', function () {
       hidden: 'scroll-hidden'
     },
     once: false,
+    addHeight: true,
   }, document.body, window);
 
   trigger.callScope = scope;
 
   scope.updateArt = function (artPerc) {
-    var artPerc = artPerc.replace(/\s/g, '').split(',');
-    console.log(artPerc);
+    $(this).closest('.hero').find('.latest').delay(500).fadeIn('slow');
+
+    $('.scroll-detector').removeClass('latest-scroll-detected');
+    $(this).addClass('latest-scroll-detected');
     $('.swarm').fadeIn();
+    var artPerc = artPerc.replace(/\s/g, '').split(',');
     updateArt(artPerc[0], artPerc[1]);
   };
 
   scope.hideArt = function (value) {
     $('.swarm').fadeOut();
   };
+
+  scope.hideLatest = function() {
+    $('.latest').fadeOut();
+  }
 });
