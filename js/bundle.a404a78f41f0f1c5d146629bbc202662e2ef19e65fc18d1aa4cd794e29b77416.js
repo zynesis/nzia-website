@@ -1038,16 +1038,18 @@ var self = window;
   * Update the current art to a new one.
   */
 
-  function updateArt() {
+  function updateArt(artPercX, artPercY) {
 
     // Clear immediately the screen
     clear();
     nextArt = [];
 
-    console.log(document.querySelector(".scroll-current"));
+    var art = document.querySelector(".section-visible + .art") ? document.querySelector(".section-visible + .art") : document.querySelector(".hero .art");
 
-    var art = document.querySelector(".scroll-current .art") ? document.querySelector(".scroll-current .art") : document.querySelector(".hero .art");
-    context.drawImage(art, 0, 0);
+    var artPosX = (artPercX ? canvas.width * artPercX : canvas.width * 0.5) - art.width / 2;
+    var artPosY = (artPercY ? canvas.height * artPercY : canvas.height * 0.5) - art.height / 2;
+
+    context.drawImage(art, artPosX, artPosY);
 
     var surface = context.getImageData(0, 0, canvas.width, canvas.height);
 
@@ -1300,11 +1302,6 @@ var self = window;
       } else {
         $.scrollify.enable();
       }
-    },
-    before: function(index, sections)  {
-      $('section').removeClass('scroll-current');
-      $(sections[index]).addClass('scroll-current');
-      window.updateArt();
     }
   });
 
@@ -1317,8 +1314,19 @@ document.addEventListener('DOMContentLoaded', function () {
       visible: 'scroll-visible',
       hidden: 'scroll-hidden'
     },
-    once: true
+    once: false,
   }, document.body, window);
 
   trigger.callScope = scope;
+
+  scope.updateArt = function (artPerc) {
+    var artPerc = artPerc.replace(/\s/g, '').split(',');
+    console.log(artPerc);
+    $('.swarm').fadeIn();
+    updateArt(artPerc[0], artPerc[1]);
+  };
+
+  scope.hideArt = function (value) {
+    $('.swarm').fadeOut();
+  };
 });

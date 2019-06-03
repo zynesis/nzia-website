@@ -9,7 +9,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
   <title>NZIA &ndash; Enabling transactions for everyone, anywhere, anytime.</title>
   
-  <link href="/scss/main.min.18d1684158010db1a03492df62a6faf1eb6f88f7662c2e0ed53e4c8663ac6318.css" rel="stylesheet">
+  <link href="/scss/main.min.8f5361294c20d35e397f2a5f6567990192244db169f8d922196678a4de2d264b.css" rel="stylesheet">
 </head>
 
 <body>
@@ -32,7 +32,7 @@
 
   <main>
 
-    <section class="hero" data-section-name="home">
+    <section class="hero">
       <div class="container">
         <div class="row">
           <div class="col col-lg-7">
@@ -40,10 +40,11 @@
           </div>
         </div>
       </div>
+      <div class="scroll-detector" data-scroll="toggle(.section-visible, .section-hidden)" data-scroll-showCallback="updateArt(0.7,0.3)"></div>
       <img src="/img/art/network.png" alt="art" class="art">
     </section>
 
-    <section class="tomorrows-currency snap" data-section-name="tomorrows-currency">
+    <section class="tomorrows-currency snap">
       <div class="ghost">
         <div></div>
         <div></div>
@@ -55,8 +56,8 @@
       <div class="container">
         <div class="row">
           <div class="col col-lg-5">
-            <h2 data-scroll>Tomorrow’s currency.<br>Everyday experience.</h2>
-            <p class="feature-description" data-scroll>The first of its kind, NZIA’s decentralized wireless payment system provides an alternate payment infrastructure for CBDC that augments existing payment networks.</p>
+            <h2 data-scroll="once">Tomorrow’s currency.<br>Everyday experience.</h2>
+            <p class="feature-description" data-scroll="once">The first of its kind, NZIA’s decentralized wireless payment system provides an alternate payment infrastructure for CBDC that augments existing payment networks.</p>
           </div>
         </div>
         <div class="row">
@@ -91,58 +92,61 @@
           </div>
         </div>
       </div>
-      <img src="/img/art/rings.png" alt="art" class="art">
+      <div class="scroll-detector" data-scroll="toggle(.section-visible, .section-hidden)" data-scroll-showCallback="updateArt(0.5,0.5)"></div>
+      <img src="/img/art/web.png" alt="art" class="art">
     </section>
 
-    <section class="people-first" data-section-name="people-first">
+    <section class="people-first">
       <div class="container">
         <div class="row spb1">
           <div class="col col-lg-5">
-            <h2 data-scroll>People-first Technology</h2>
-            <p data-scroll>NZIA CBDC is designed to be embraced by the general population and eventually become as ubiquitous as cash, and tailored to the social and geographical characteristics unique to each region.</p>
+            <h2 data-scroll="once">People-first Technology</h2>
+            <p data-scroll="once">NZIA CBDC is designed to be embraced by the general population and eventually become as ubiquitous as cash, and tailored to the social and geographical characteristics unique to each region.</p>
           </div>
         </div>
         <div class="row">
           <div class="col col-lg-3 offset-lg-5">
-            <h3 data-scroll>Core Principles</h3>
+            <h3 data-scroll="once">Core Principles</h3>
           </div>
           <div class="col col-lg-4">
             
             <div class="principle">
-              <h4 class="h5" data-scroll>Accessible to everyone</h4>
-              <p data-scroll>even without a smartphone</p>
+              <h4 class="h5" data-scroll="once">Accessible to everyone</h4>
+              <p data-scroll="once">even without a smartphone</p>
             </div>
             
             <div class="principle">
-              <h4 class="h5" data-scroll>Available anywhere</h4>
-              <p data-scroll>across all communities</p>
+              <h4 class="h5" data-scroll="once">Available anywhere</h4>
+              <p data-scroll="once">across all communities</p>
             </div>
             
             <div class="principle">
-              <h4 class="h5" data-scroll>Available anytime</h4>
-              <p data-scroll>24/7/365, just like cash</p>
+              <h4 class="h5" data-scroll="once">Available anytime</h4>
+              <p data-scroll="once">24/7/365, just like cash</p>
             </div>
             
             <div class="principle">
-              <h4 class="h5" data-scroll>Broadly inclusive</h4>
-              <p data-scroll>both financial and industrial</p>
+              <h4 class="h5" data-scroll="once">Broadly inclusive</h4>
+              <p data-scroll="once">both financial and industrial</p>
             </div>
             
             <div class="principle">
-              <h4 class="h5" data-scroll>Loveable by everyday people</h4>
-              <p data-scroll>simple, quick and free to use</p>
+              <h4 class="h5" data-scroll="once">Loveable by everyday people</h4>
+              <p data-scroll="once">simple, quick and free to use</p>
             </div>
             
           </div>
         </div>
       </div>
+      <div class="scroll-detector" data-scroll="toggle(.section-visible, .section-hidden)" data-scroll-showCallback="updateArt(0.4,0.6)"></div>
+      <img src="/img/art/people.png" alt="art" class="art">
     </section>
 
-    <section class="inclusive-architecture" data-section-name="inclusive-architecture">
+    <section class="inclusive-architecture">
       <div class="container">
         <div class="row">
           <div class="col col-lg-5">
-            <h2 data-scroll>An inclusive architecture</h2>
+            <h2 data-scroll="once">An inclusive architecture</h2>
             <p data-scroll>To provide broad accessibility and ensure constant availability of CBDC across a nation, there are significant technical challenges that must be overcome. These challenges are especially compounded for archipelagic states and nations with geographically dispersed regions with low population densities. In order to extend financial inclusion to all the remote communities in an economically feasible way, a new type of approach is required.</p> <p data-scroll>NZIA has developed an innovative Decentralized Wireless Payment System, consisting of a modular design that can be customized to meet regional needs ranging from highly dense urban cities to sparse rural towns and villages. In order to streamline upfront investment costs, our systems can be adapted to work with existing infrastructure and easily scale on an as-needed basis, rather than a one-size-fits-all approach.</p>
           </div>
           <div class="col col-lg-6 offset-lg-1 d-flex">
@@ -167,14 +171,16 @@
             <p data-scroll>The NZIA platform integrates hybrid wireless communication networks, blockchain hardware nodes, edge processing capability and the NZIA Cortex DLT. Our approach provides analternative payment infrastructure that is capable of working alongside existing banking systems, to augment bank giro networks with improved efficiency. By providing an alternative decentralized payment network ancillary to existing centralized networks, single points of failure can be overcome to enhance the overall financial system with greater flexibility and stability.</p>
           </div>
       </div>
+      <div class="scroll-detector" data-scroll="toggle(.section-visible, .section-hidden)" data-scroll-showCallback="hideArt()"></div>
+      
     </section>
 
-    <section class="alices-story" data-section-name="alices-story">
+    <section class="alices-story">
       <div class="container">
         <div class="row">
           <div class="col col-lg-6 offset-lg-3 text-center">
-            <h2 data-scroll>Alice’s Story</h2>
-            <p data-scroll>To help illustrate NZIA CBDC in action, we share a short story of Alice and Bob living on their beautiful tropical island of 10,000, with only a single bank and an under-developed infrastructure.</p>
+            <h2 data-scroll="once">Alice’s Story</h2>
+            <p data-scroll="once">To help illustrate NZIA CBDC in action, we share a short story of Alice and Bob living on their beautiful tropical island of 10,000, with only a single bank and an under-developed infrastructure.</p>
           </div>
         </div>
         
@@ -267,29 +273,33 @@
         </div>
        
       </div>
+      <div class="scroll-detector" data-scroll="toggle(.section-visible, .section-hidden)" data-scroll-showCallback="hideArt()"></div>
+      
     </section>
 
-    <section class="about-nzia" data-section-name="about-nzia">
+    <section class="about-nzia">
       <div class="container">
         <div class="row">
           <div class="col col-lg-5 offset-lg-6">
-            <h2 data-scroll>About NZIA</h2>
+            <h2 data-scroll="once">About NZIA</h2>
             <p data-scroll>NZIA builds Decentralized Wireless Payment Systems. Our CBDC solutions provide Central Banks with greater maneuverability and flexibility to navigate the digital economy, in a frictionless manner designed to work within existing financial frameworks and regulations.</p> <p data-scroll>With offices in Canada, South Korea, Singapore, and the Bahamas, NZIA is embarking on its mission to empower transactions for everyone, anywhere and anytime.</p>
           </div>
         </div>
       </div>
+      <div class="scroll-detector" data-scroll="toggle(.section-visible, .section-hidden)" data-scroll-showCallback="updateArt(0.4,0.5)"></div>
+      <img src="/img/art/map.png" alt="art" class="art">
     </section>
 
-    <section class="get-in-touch" data-section-name="get-in-touch">
+    <section class="get-in-touch">
       <div class="container">
         <div class="row">
           <div class="col col-lg-6 offset-lg-6">
-            <h2 data-scroll>Get in touch</h2>
+            <h2 data-scroll="once">Get in touch</h2>
           </div>
         </div>
         <div class="row">
           <div class="col col-lg-5">
-            <form data-scroll>
+            <form data-scroll="once">
               <div class="form-field">
                 <input name="name" type="text"  placeholder="Your name">
               </div>
@@ -313,10 +323,14 @@
             </form>
           </div>
           <div class="col col-lg-6 offset-lg-1">
-            <p class="mbg1" data-scroll>Send us a message with the form or an email to:</p>
-            <a href="mailto:info@nzia.io" class="h5" data-scroll>info@nzia.io</a>
+            <p class="mbg1" data-scroll="once">Send us a message with the form or an email to:</p>
+            <a href="mailto:info@nzia.io" class="h5" data-scroll="once">info@nzia.io</a>
           </div>
         </div>
+      </div>
+      <div class="scroll-detector" data-scroll="toggle(.section-visible, .section-hidden)" data-scroll-showCallback="updateArt(0.6,0.7)"></div>
+      <img src="/img/art/talktous.png" alt="art" class="art">
+    </section>
 
   </main>
 
@@ -339,7 +353,7 @@
   
   
   
-  <script src="/js/bundle.916e2e38237fee9cf0a97c0b5700dc98162536c8e2e24dd42bbbfb4cbe18cf09.js" type="text/javascript"></script>
+  <script src="/js/bundle.a404a78f41f0f1c5d146629bbc202662e2ef19e65fc18d1aa4cd794e29b77416.js" type="text/javascript"></script>
   
 </body>
 
