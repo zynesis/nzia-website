@@ -902,10 +902,10 @@ var self = window;
     FPS = 60,
 
     /*
-		 * List colors.
-		 */
+    * List colors.
+    */
 
-    colors = ['#fff', '#fff'];
+    colors = ['#FFB4B4', '#98F2C1', '#7CEDFF', '#FFF1B9'];
 
   /*
   * Init.
@@ -1069,6 +1069,8 @@ var self = window;
       }
     }
 
+    nextArt = shuffle(nextArt);
+
     var seed = nextArt.length;
     // Recreate art particles, based on this seed
     createArtParticles(seed);
@@ -1165,7 +1167,7 @@ var self = window;
     [].forEach.call(art, function (particle, index) {
       context.save();
       context.globalAlpha = particle.alpha;
-      context.fillStyle = 'rgb(255, 255, 255)';
+      context.fillStyle = particle.color;
       context.beginPath();
       context.arc(particle.x, particle.y, particle.radius, 0, Math.PI * 2);
       context.fill();
@@ -1189,6 +1191,21 @@ var self = window;
 
   function randomBetween(min, max) {
     return ~~(Math.random() * (max - min + 1) + min);
+  }
+
+  /*
+   * Shuffles array in place.
+   * @param {Array} a items An array containing the items.
+   */
+  function shuffle(a) {
+    var j, x, i;
+    for (i = a.length - 1; i > 0; i--) {
+      j = Math.floor(Math.random() * (i + 1));
+      x = a[i];
+      a[i] = a[j];
+      a[j] = x;
+    }
+    return a;
   }
 
 	/*
