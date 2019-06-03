@@ -7,6 +7,10 @@ content:
   sections:
     hero:
       headline: Enabling transactions for everyone, anywhere, anytime.
+      latest:
+        headline: Central Bank of The Bahamas
+        thumbnail: the-bahamas-thumb
+        full_image: the-bahamas-full
     tomorrows_currency:
       headline: Tomorrow’s currency.<br>Everyday experience.
       features:

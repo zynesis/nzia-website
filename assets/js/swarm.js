@@ -189,7 +189,6 @@ var self = window;
     nextArt = [];
 
     var art = document.querySelector(".latest-scroll-detected + .art") ? document.querySelector(".latest-scroll-detected + .art") : document.querySelector(".section-visible + .art");
-    console.log(art);
 
     var artPosX = (artPercX ? canvas.width * artPercX : canvas.width * 0.5) - art.width / 2;
     var artPosY = (artPercY ? canvas.height * artPercY : canvas.height * 0.5) - art.height / 2;
