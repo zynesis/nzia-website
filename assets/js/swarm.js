@@ -159,6 +159,8 @@ var self = window;
 
       });
 
+      art = shuffle(art);
+
     }
   }
 
