@@ -104,14 +104,16 @@ document.addEventListener('DOMContentLoaded', function () {
       hidden: 'scroll-hidden'
     },
     once: false,
+    addHeight: true,
   }, document.body, window);
 
   trigger.callScope = scope;
 
   scope.updateArt = function (artPerc) {
-    var artPerc = artPerc.replace(/\s/g, '').split(',');
-    console.log(artPerc);
+    $('.scroll-detector').removeClass('latest-scroll-detected');
+    $(this).addClass('latest-scroll-detected');
     $('.swarm').fadeIn();
+    var artPerc = artPerc.replace(/\s/g, '').split(',');
     updateArt(artPerc[0], artPerc[1]);
   };
 
