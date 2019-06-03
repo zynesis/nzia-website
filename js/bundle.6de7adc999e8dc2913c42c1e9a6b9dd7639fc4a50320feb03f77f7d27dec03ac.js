@@ -929,7 +929,7 @@ var self = window;
         canvas.addEventListener('mousemove', onMouseMove, false);
       }
       window.onresize = onResize;
-      updateArt();
+      updateArt(0.7, 0.5); // should be the same as hero
       loop();
     } else {
       console.error('Sorry, browser does not support canvas');
