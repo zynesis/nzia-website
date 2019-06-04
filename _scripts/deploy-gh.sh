@@ -27,7 +27,7 @@ hugo
 
 echo "Updating gh-pages branch"
 cd public
-echo nzia.aenism.com >> CNAME
+echo nzia.io >> CNAME
 git add --all
 git commit -m "Publishing to gh-pages (deploy.sh)"
 
