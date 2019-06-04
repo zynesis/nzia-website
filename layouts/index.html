@@ -187,18 +187,19 @@
         </div>
         <div class="row">
           <div class="col col-lg-5">
-            <form data-scroll="once">
+            <form data-scroll="once" action="https://formkeep.com/f/459e1f2108d2" id="contact-form" accept-charset="UTF-8" enctype="multipart/form-data" method="POST">
+              <input type="hidden" name="utf8" value="✓">
               <div class="form-field">
-                <input name="name" type="text"  placeholder="{{ $.Param "content.sections.get_in_touch.form.fields.name" }}">
+                <input name="name" type="text"  placeholder="{{ $.Param "content.sections.get_in_touch.form.fields.name" }}" required>
               </div>
               <div class="form-field">
-                <input name="email" type="email" placeholder="{{ $.Param "content.sections.get_in_touch.form.fields.email" }}">
+                <input name="email" type="email" placeholder="{{ $.Param "content.sections.get_in_touch.form.fields.email" }}" required>
               </div>
               <div class="form-field">
-                <input name="organization" type="text" placeholder="{{ $.Param "content.sections.get_in_touch.form.fields.organization" }}">
+                <input name="organization" type="text" placeholder="{{ $.Param "content.sections.get_in_touch.form.fields.organization" }}" required>
               </div>
               <div class="form-field">
-                <textarea rows="5" name="whats_up" placeholder="{{ $.Param "content.sections.get_in_touch.form.fields.whats_up" }}"></textarea>
+                <textarea rows="5" name="whats_up" placeholder="{{ $.Param "content.sections.get_in_touch.form.fields.whats_up" }}" required></textarea>
               </div>
               <div class="form-footer">
                 <div class="form-helper">

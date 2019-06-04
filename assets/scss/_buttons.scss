@@ -19,5 +19,12 @@
   &:hover {
     text-decoration: underline;
   }
-}
 
+  &[disabled] {
+    color: $color-ui-medium;
+
+    &:hover  {
+      text-decoration: none;
+    }
+  }
+}
