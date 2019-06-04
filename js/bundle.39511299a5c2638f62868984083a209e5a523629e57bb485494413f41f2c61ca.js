@@ -1329,6 +1329,36 @@ var self = window;
     }
   });
 
+  // Contact form
+  $('#contact-form').submit(function (event) {
+    event.preventDefault();
+
+    var formEl = $(this);
+    var submitButton = $('button[type=submit]', formEl);
+    var currentButtonLabel = submitButton.html();
+
+    $.ajax({
+      type: 'POST',
+      url: formEl.prop('action'),
+      accept: {
+        javascript: 'application/javascript'
+      },
+      data: formEl.serialize(),
+      beforeSend: function () {
+        submitButton.html('Sending…');
+        submitButton.prop('disabled', 'disabled');
+      }
+    }).done(function (data) {
+      setTimeout(function () {
+        submitButton.html('Sent!');
+        setTimeout(function () {
+          submitButton.html(currentButtonLabel);
+          submitButton.prop('disabled', false);
+        }, 1000);
+      }, 1000);
+    });
+  });
+
 });
 
 document.addEventListener('DOMContentLoaded', function () {
