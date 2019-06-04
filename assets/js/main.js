@@ -134,7 +134,6 @@ document.addEventListener('DOMContentLoaded', function () {
       hidden: 'scroll-hidden'
     },
     once: false,
-    addHeight: true,
   }, document.body, window);
 
   trigger.callScope = scope;

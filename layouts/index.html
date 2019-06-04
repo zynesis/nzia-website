@@ -104,12 +104,12 @@
             {{ $.Param "content.sections.inclusive_architecture.body1" | safeHTML }}
           </div>
           <div class="col col-lg-6 offset-lg-1 d-flex">
-            <img src="/img/{{ $.Param "content.sections.inclusive_architecture.image.x1" }}" srcset="/img/{{ $.Param "content.sections.inclusive_architecture.image.x1" }} 1x, /img/{{ $.Param "content.sections.inclusive_architecture.image.x2" }} 2x" alt="{{ $.Param "content.sections.inclusive_architecture.image.alt" }}" class="inclusive-image mtg1">
+            <img src="/img/{{ $.Param "content.sections.inclusive_architecture.image.x1" }}" srcset="/img/{{ $.Param "content.sections.inclusive_architecture.image.x1" }} 1x, /img/{{ $.Param "content.sections.inclusive_architecture.image.x2" }} 2x" alt="{{ $.Param "content.sections.inclusive_architecture.image.alt" }}" class="inclusive-image mtg1" data-scroll="once">
           </div>
         </div>
         <div class="row">
           <div class="col col-lg-5 offset-lg-1 d-flex">
-            <div class="architecture-diagram mvg1">
+            <div class="architecture-diagram mvg1" data-scroll="once">
               <div class="architecture-layer">
                 {{ $.Param "content.sections.inclusive_architecture.diagram.layer1" }}
               </div>
@@ -126,7 +126,6 @@
           </div>
       </div>
       <div class="scroll-detector" data-scroll="toggle(.section-visible, .section-hidden)" data-scroll-showCallback="hideArt()"></div>
-      <!-- <img src="/img/art/empty.png" alt="art" class="art"> -->
     </section>
 
     <section class="alices-story">
@@ -167,10 +166,33 @@
 
     <section class="about-nzia">
       <div class="container">
-        <div class="row">
+        <div class="row spb1">
           <div class="col col-lg-5 offset-lg-6">
             <h2 data-scroll="once">{{ $.Param "content.sections.about_nzia.headline" }}</h2>
             {{ $.Param "content.sections.about_nzia.body" | safeHTML }}
+          </div>
+        </div>
+        <div class="row">
+          <div class="col col-lg-8 offset-lg-2">
+            <h3>{{ $.Param "content.sections.about_nzia.team.headline" }}</h3>
+            <div class="row">
+              {{ range $member := $.Param "content.sections.about_nzia.team.members" }}
+              <div class="team-member col col-lg-6">
+                <div class="row">
+                  <div class="col col-lg-3">
+                    <img src="/img/team/{{ $member.image }}.jpg"
+                      srcset="/img/team/{{ $member.image }}.jpg 1x, /img/team/{{ $member.image }}@2x.jpg 2x"
+                      alt="{{ $member.name }}’s thumbnail">
+                  </div>
+                  <div class="col col-lg-9">
+                    <h4 class="h5">{{ $member.name }}</h4>
+                    <small>{{ $member.title }}</small>
+                    <p>{{ $member.description }}</p>
+                  </div>
+                </div>
+              </div>
+              {{ end }}
+            </div>
           </div>
         </div>
       </div>

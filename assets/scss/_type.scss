@@ -75,7 +75,11 @@ p, .p {
   letter-spacing: $body1-letter-spacing;
 
   + p, + .p {
-    text-indent: $grid-gutter * 2;
+    text-indent: $grid-gutter;
+
+    @include media(">lg") {
+      text-indent: $grid-gutter * 2;
+    }
   }
 }
 

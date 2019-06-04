@@ -392,7 +392,7 @@ section.alices-story {
   }
 
   .story-image {
-    border: 1px solid $color-ui-dark;
+    background-color: $color-ui-dark;
     border-radius: $base-border-radius;
 
     @include media(">lg") {
@@ -477,6 +477,42 @@ section.alices-story {
       left: 50%;
       margin-left: -12px;
       top: 4px;
+    }
+  }
+}
+
+
+//
+// About NZIA
+//
+
+.about-nzia {
+  .team-member {
+    margin-bottom: $grid-gutter;
+
+    img {
+      display: block;
+      border-radius: 50%;
+      width: 80px;
+      height: 80px;
+      margin-bottom: 8px;
+    }
+
+    h4 {
+      margin-bottom: 0;
+    }
+
+    small {
+      display: block;
+      margin-bottom: 0.8rem;
+    }
+
+    p {
+      font-size: $body2-font-size;
+      line-height: $body2-line-height;
+      font-weight: $body2-font-weight;
+      margin-bottom: $body2-margin-bottom;
+      letter-spacing: $body2-letter-spacing;
     }
   }
 }
