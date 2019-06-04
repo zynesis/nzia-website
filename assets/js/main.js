@@ -54,7 +54,7 @@ $(function () {
 
   // Carousel for story
   $(".story").slick({
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 5000,
     infinite: true,
     arrows: false,
@@ -155,5 +155,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
   scope.hideLatest = function() {
     $('.latest').fadeOut();
+  }
+
+  scope.startStory = function () {
+    $(".story").slick('slickPlay');
   }
 });

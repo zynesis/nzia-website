@@ -392,6 +392,9 @@ section.alices-story {
   }
 
   .story-image {
+    border: 1px solid $color-ui-dark;
+    border-radius: $base-border-radius;
+
     @include media(">lg") {
       min-height: 320px;
     }
