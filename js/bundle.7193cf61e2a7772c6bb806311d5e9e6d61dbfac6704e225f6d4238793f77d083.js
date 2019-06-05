@@ -1313,6 +1313,11 @@ var self = window;
     easing: "easeOutExpo",
     updateHash: false,
     scrollSpeed: 1100,
+    before: function(i, sections) {
+      var ref = sections[i].attr("data-section-name");
+      $(".pagination .active").removeClass("active");
+      $(".pagination").find("a[href=\"#" + ref + "\"]").addClass("active");
+    },
     afterResize: function () {
       if ($(window).width() <= 992) {
         $.scrollify.disable();
@@ -1321,6 +1326,24 @@ var self = window;
       }
     },
     afterRender: function () {
+      // Pagination
+      var pagination = "<ul class=\"pagination\">";
+      var activeClass = "";
+      $("[data-section-name]").each(function (i) {
+        if (i === 0) {
+          pagination += "<li><a class=\"active\" href=\"#" + $(this).attr("data-section-name") + "\"><span class=\"hover-text\">Home</span></a></li>";
+        } else {
+          pagination += "<li><a href=\"#" + $(this).attr("data-section-name") + "\"><span class=\"hover-text\">" + $(this).find('h2').html() + "</span></a></li>";
+        }
+      });
+      pagination += "</ul>";
+      $("body").append(pagination);
+      $(".pagination a").on("click", function(e) {
+        e.preventDefault();
+        $.scrollify.move($(this).attr("href"));
+      });
+
+      // Disable on mobile
       if ($(window).width() <= 992) {
         $.scrollify.disable();
       } else {
@@ -1330,6 +1353,11 @@ var self = window;
   });
 
   // Contact form
+  $('.cta a').click(function(e) {
+    e.preventDefault();
+    $.scrollify.move($(this).attr("href"));
+  });
+
   $('#contact-form').submit(function (event) {
     event.preventDefault();
 
