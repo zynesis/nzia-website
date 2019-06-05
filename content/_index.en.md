@@ -88,7 +88,7 @@ content:
         <p data-scroll="once">NZIA builds Decentralized Wireless Payment Systems. Our CBDC solutions provide Central Banks with greater maneuverability and flexibility to navigate the digital economy, in a frictionless manner, designed to work within existing financial frameworks and regulations.</p>
         <p data-scroll="once">With offices in Canada, South Korea, Singapore, South Africa and The Bahamas, NZIA is embarking on its mission to empower transactions for everyone, anywhere and anytime.</p>
       team:
-        headline: The Team
+        headline: Executive Team
         members:
           - name: Simon Kim
             title: Co-Founder, Managing Director
