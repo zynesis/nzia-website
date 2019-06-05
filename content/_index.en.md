@@ -48,7 +48,7 @@ content:
         <p data-scroll="once">To provide broad accessibility and ensure constant availability of CBDC across a nation, there are significant technical challenges that must be overcome. These challenges are especially compounded for archipelagic states and nations with geographically dispersed regions with low population densities. In order to extend financial inclusion to all the remote communities in an economically feasible way, a new type of approach is required.</p>
         <p data-scroll="once">NZIA has developed an innovative Decentralized Wireless Payment System, consisting of a modular design that can be customized to meet regional needs ranging from highly dense urban cities to sparse rural towns and villages. In order to streamline upfront investment costs, our systems can be adapted to work with existing infrastructure and easily scale on an as-needed basis, rather than a one-size-fits-all approach.</p>
       body2:
-        <p data-scroll="once">The NZIA platform integrates hybrid wireless communication networks, blockchain hardware nodes, edge processing capability and the NZIA Cortex DLT. Our approach provides analternative payment infrastructure that is capable of working alongside existing banking systems, to augment bank giro networks with improved efficiency. By providing an alternative decentralized payment network ancillary to existing centralized networks, single points of failure can be overcome to enhance the overall financial system with greater flexibility and stability.</p>
+        <p data-scroll="once">The NZIA platform integrates hybrid wireless communication networks, blockchain hardware nodes, edge processing capability and the NZIA Cortex DLT. Our approach provides an alternative payment infrastructure that is capable of working alongside existing banking systems, to augment financial networks with improved efficiency. By providing an alternative decentralized payment network ancillary to existing centralized networks, single points of failure can be overcome to enhance the overall financial system with greater flexibility and stability.</p>
       image:
         x1: beachbar.jpg
         x2: beachbar@2x.jpg
@@ -72,7 +72,7 @@ content:
           body: Alice then decides to send some money to her husband Bob by a free P2P transfer, to pick up some groceries on his way home; Except this is not a normal P2P transfer from phone to phone.
         - image: alice4
           image_alt: Bob holding up and looking at his NZIA debit card
-          body: Bob is a more traditional kind of guy and prefers the plastic debit card issued to him from the local bank, over using a smart phone. Through NZIA, the CBDC is transferred seamlessly from Alice’s mobile wallet directly to Bob’s physical card; She deposits the rest of her money into her savings account.
+          body: Bob is a more traditional kind of guy and prefers the plastic debit card issued to him from the local bank, over using a smart phone. Through NZIA, CBDC is transferred seamlessly from Alice’s mobile wallet directly to Bob’s physical card; She deposits the rest of her money into her savings account.
         - image: alice5
           image_alt: CASH-ONLY sign with rain in front of it
           body: It’s getting later on in the evening and the weather starts to get dicey. Unbeknownst to Bob, due to adverse conditions on the main island the payment network on his island has totally lost connection to the main network. Typically, in these scenarios, signs would go up at merchants letting people know system is down, so cash-only.
@@ -81,7 +81,7 @@ content:
           body: Luckily, this is not a typical payment network. Because of unique NZIA technology, despite the network partition, the payment network on this island continues to operate independently.
         - image: alice7
           image_alt: Bob paying using his NZIA debit card at the grocery store checkout
-          body: Bob heads to the supermarket, grabs his groceries, and presents his card to the cashier who collects payment by scanning the OR code on it using the free POS mobile app. Behind the scenes, NZIA’s innovative reverse pull-push technology processed the transaction within seconds, and Bob is happily on his way.
+          body: Bob heads to the supermarket, grabs his groceries, and presents his card to the cashier who collects payment by scanning the QR code on it using the free POS mobile app. Behind the scenes, NZIA’s innovative reverse pull-push technology processed the transaction within seconds, and Bob is happily on his way.
     about_nzia:
       headline: About NZIA
       body:
