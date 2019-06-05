@@ -120,9 +120,7 @@ $(function () {
   // Contact form
   $('.cta a').click(function(e) {
     e.preventDefault();
-    $('body').animate({
-      scrollTop: $('[data-section-name="get-in-touch"]').offset().top
-    }, 1000);
+    $.scrollify.move($(this).attr("href"));
   });
 
   $('#contact-form').submit(function (event) {

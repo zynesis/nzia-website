@@ -12,5 +12,6 @@ DefaultContentLanguage = "en"
     languageName = "English"
     title = "NZIA"
     cta_label = "Get in touch"
+    cta_url = "#get-in-touch"
     company_name = "NZIA"
     weight = 3
