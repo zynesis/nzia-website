@@ -1,6 +1,6 @@
 baseURL = "https://nzia.io/"
 copyright = "All Rights Reserved"
-googleAnalytics = ""
+googleAnalytics = "UA-135427909-1"
 languageCode = "en-us"
 title = "NZIA"
 [blackfriday]
