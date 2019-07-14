@@ -110,6 +110,10 @@ content:
             title: Chief Financial Officer
             description: Peter has over 10 years of experience serving as CFO of publicly-listed companies in the Korea Stock Exchange, in the network and IT business sectors.
             image: peter_lee
+          - name: Franklin Ngamga
+            title: Head of EMEA
+            description: Business and tech development best describe Franklin’s career focus. He has been in the tech development space as a technologist, venture capitalist, and consultant for over 10 years.
+            image: franklin_ngamga
     get_in_touch:
       headline: Get in touch
       subhead: "Send us a message with the form or an email to:"
