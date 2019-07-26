@@ -89,7 +89,7 @@ content:
         <p data-scroll="once">With offices in Canada, South Korea, Singapore, South Africa and The Bahamas, NZIA is embarking on its mission to empower transactions for everyone, anywhere and anytime.</p>
       team:
         headline: Executive Team
-        members:
+        human_members:
           - name: Simon Kim
             title: Co-Founder, Managing Director
             description: Simon has over 20 years of experience architecting and deploying solutions across national infrastructure, communications networking, and international finance industries. 
@@ -102,10 +102,10 @@ content:
             title: Co-Founder, Chief Technology Officer
             description: As one of the early contributors to Bitcoin, Ethereum, and Dash projects, U-Zyn is a pioneer in the emergence of blockchain technology.
             image: uzyn_chua
-          - name: John Kim
-            title: Chief Legal Officer
-            description: As a partner of global law firm Norton Rose Fulbright, John is a leader within the firm for blockchain and digital asset projects.
-            image: john_kim
+          # - name: John Kim
+          #   title: Chief Legal Officer
+          #   description: As a partner of global law firm Norton Rose Fulbright, John is a leader within the firm for blockchain and digital asset projects.
+          #   image: john_kim
           - name: Peter Lee
             title: Chief Financial Officer
             description: Peter has over 10 years of experience serving as CFO of publicly-listed companies in the Korea Stock Exchange, in the network and IT business sectors.
@@ -114,6 +114,11 @@ content:
             title: Head of EMEA
             description: Business and tech development best describe Franklin’s career focus. He has been in the tech development space as a technologist, venture capitalist, and consultant for over 10 years.
             image: franklin_ngamga
+        non_human_members:
+          - name: Norton Rose Fulbright
+            title: Legal Counsel
+            description: One of the largest, most established law firms in the world, with 4,000 lawyers in over 60 offices worldwide. The firm is a global thought leader and legal advisor in the blockchain and cryptocurrency space.
+            image: norton_rose_fulbright
     get_in_touch:
       headline: Get in touch
       subhead: "Send us a message with the form or an email to:"

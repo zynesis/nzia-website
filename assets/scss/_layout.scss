@@ -591,6 +591,16 @@ section.alices-story {
       margin-bottom: $body2-margin-bottom;
       letter-spacing: $body2-letter-spacing;
     }
+
+    &.non-human {
+      img {
+        width: auto;
+        height: auto;
+        margin-top: 16px;
+        margin-bottom: 16px;
+        border-radius: 0;
+      }
+    }
   }
 }
 
