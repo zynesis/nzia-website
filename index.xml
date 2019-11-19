@@ -7,10 +7,60 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All Rights Reserved</copyright>
-    <lastBuildDate>Wed, 13 Nov 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 19 Nov 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://nzia.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Agent locations</title>
+      <link>https://nzia.io/sand-dollar/help/agent-locations/</link>
+      <pubDate>Tue, 19 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://nzia.io/sand-dollar/help/agent-locations/</guid>
+      <description>Need a new card? Need help with your account? Authorized Sand Dollar Agents provide the following services:
+ Issue/re-issue of Sand Dollar Card Activation/deactivation of Sand Dollar Card PIN Reset  Agent locations will be updated soon.</description>
+    </item>
+    
+    <item>
+      <title>Getting started</title>
+      <link>https://nzia.io/sand-dollar/help/getting-started/</link>
+      <pubDate>Tue, 19 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://nzia.io/sand-dollar/help/getting-started/</guid>
+      <description>The Sand Dollar Project aims to digitize the Bahamian dollar into a blockchain-based currency, also known as Sand Dollars. Anyone can have a Sand Dollar account and enjoy the facilities offered by it. These include the Sand Dollar Card and the Sand Dollar Wallet App.
+You should have received your Sand Dollar Card, downloaded the Sand Dollar Wallet App, and paired them together when you first used the Sand Dollar Wallet App.</description>
+    </item>
+    
+    <item>
+      <title>Receiving sand dollars</title>
+      <link>https://nzia.io/sand-dollar/help/receiving-sand-dollars/</link>
+      <pubDate>Tue, 19 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://nzia.io/sand-dollar/help/receiving-sand-dollars/</guid>
+      <description>You can receive Sand Dollars in your account using the Sand Dollar Wallet App or your Sand Dollar Card.
+Receive using Wallet App Option A: Receive using QR code  Press Receive in your Wallet App, Wallet tab. Select “Show QR Code”. You can either specify an amount to collect a specific amount, or leave the amount unspecified and leave it to the Sender to specify the amount. Show the QR code to the Sender and request Sender to press “Send” followed by “Scan QR Code”.</description>
+    </item>
+    
+    <item>
+      <title>Sending sand dollars</title>
+      <link>https://nzia.io/sand-dollar/help/sending-sand-dollars/</link>
+      <pubDate>Tue, 19 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://nzia.io/sand-dollar/help/sending-sand-dollars/</guid>
+      <description>You can send Sand Dollars from your account using the Sand Dollar Wallet App or your Sand Dollar Card.
+Send with Sand Dollar Card Allow Recipient to scan your Sand Dollar Card  Ensure that Recipient has entered the correct amount to receive from you, in their Wallet App. Generate an OTP on your Sand Dollar card by pressing the round button below the S QR code. Allow the Recipient to use their Wallet App to scan both your OTP and S QR code.</description>
+    </item>
+    
+    <item>
+      <title>Staying secure</title>
+      <link>https://nzia.io/sand-dollar/help/staying-secure/</link>
+      <pubDate>Tue, 19 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://nzia.io/sand-dollar/help/staying-secure/</guid>
+      <description>Your Sand Dollar account is used to access Sand Dollar services like payment, transfers and authorizing transactions. It includes your Sand Dollar Card, Sand Dollar Wallet App, Custom Name, receiving addresses, and the associated personal details. We take your privacy and security of your personal details seriously, and employs industry-standard practices to safeguard your Sand Dollar account.
+We recommend that you follow these best practices to maximize the security of your account.</description>
+    </item>
     
     <item>
       <title>Sand Dollar Privacy Policy</title>
@@ -18,7 +68,7 @@
       <pubDate>Wed, 13 Nov 2019 00:00:00 +0000</pubDate>
       
       <guid>https://nzia.io/sand-dollar/privacy-policy/</guid>
-      <description>Sand Dollar Privacy Policy NZIA Limited built the Sand Dollar Wallet app as a Free app. This SERVICE is provided by NZIA Limited at no cost and is intended for use as is.
+      <description>NZIA Limited built the Sand Dollar Wallet app as a Free app. This SERVICE is provided by NZIA Limited at no cost and is intended for use as is.
 This page is used to inform visitors regarding our policies with the collection, use, and disclosure of Personal Information if anyone decided to use our Service.
 If you choose to use our Service, then you agree to the collection and use of information in relation to this policy.</description>
     </item>
