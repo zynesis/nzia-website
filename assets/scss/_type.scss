@@ -80,6 +80,38 @@ p, ul, ol {
   }
 }
 
+.content {
+  @include media("<sm") {
+    h2 {
+      font-size: $h5-font-size;
+      line-height: $h5-line-height;
+      font-weight: $h5-font-weight;
+      margin-bottom: $h5-margin-bottom;
+      letter-spacing: $h5-letter-spacing;
+    }
+
+    h3, h4 {
+      font-size: $h6-font-size;
+      line-height: $h6-line-height;
+      font-weight: $h6-font-weight;
+      margin-bottom: $h6-margin-bottom;
+      letter-spacing: $h6-letter-spacing;
+    }
+
+    p, ul, ol {
+      + h2 {
+        margin-top: $h5-margin-bottom * 1.5;
+      }
+      + h3 {
+        margin-top: $h6-margin-bottom * 1.5;
+      }
+      + h4 {
+        margin-top: $h6-margin-bottom * 1.5;
+      }
+    }
+  }
+}
+
 
 //
 // Paragraphs
@@ -92,14 +124,17 @@ p, .p {
   margin-bottom: $body1-margin-bottom;
   letter-spacing: $body1-letter-spacing;
 
-  + p, + .p,
-  + ul, + ol {
+  + p, + .p {
     text-indent: $grid-gutter;
     list-style-position: inside;
 
     @include media(">lg") {
       text-indent: $grid-gutter * 2;
     }
+  }
+
+  + ul, + ol {
+    margin-top: $body1-line-height;
   }
 }
 
@@ -168,6 +203,14 @@ ol {
         font-size: $body1-font-size;
         font-weight: $body1-font-weight;
       }
+    }
+  }
+
+  ul, ol {
+    padding-left: $grid-gutter;
+
+    + p {
+      margin-top: $body1-line-height;
     }
   }
 }

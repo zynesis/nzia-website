@@ -167,7 +167,7 @@ body > header {
 
   > main {
     position: relative;
-    top: $section-padding-top * 2;
+    margin-top: $section-padding-top * 2;
 
     @include media(">lg") {
       top: $section-padding-top-lg * 2;
@@ -181,6 +181,25 @@ body > header {
     .col {
       margin-left: 0;
     }
+  }
+}
+
+
+//
+// Help pages
+//
+
+.help-header {
+  height: 224px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $color-ui-dark;
+  margin-bottom: -48px;
+
+  h1 {
+    margin: 0;
+    font-weight: $font-weight-regular;
   }
 }
 

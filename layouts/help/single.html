@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="{{ $.Param "meta.description" }}">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
+  <title>{{ .Site.Params.title }} &ndash; {{ $.Param "title" }}</title>
+  {{ $style := resources.Get "scss/main.scss" | toCSS | postCSS | minify | fingerprint }}
+  <link href="{{ $style.RelPermalink }}" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="help-header container-fluid">
+    <h1 class="h4">{{ $.Param "title" }}</h1>
+  </div>
+  <div class="content">
+    <main>
+      <div class="container">
+        {{ .Content }}
+      </div>
+    </main>
+  </div>
+
+  {{ template "_internal/google_analytics_async.html" . }}
+</body>
+
+</html>

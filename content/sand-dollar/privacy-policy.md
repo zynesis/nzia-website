@@ -1,10 +1,8 @@
 ---
 title: Sand Dollar Privacy Policy
 date: 2019-11-13
-type: press
+type: help
 ---
-
-# Sand Dollar Privacy Policy
 
 NZIA Limited built the Sand Dollar Wallet app as a Free app. This SERVICE is provided by NZIA Limited at no cost and is intended for use as is.
 
