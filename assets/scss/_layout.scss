@@ -130,7 +130,6 @@ body > header {
 
 .content {
   position: relative;
-  padding-bottom: $section-padding-bottom * 2;
 
   @include media(">lg") {
     padding-left: $grid-gutter * 2;
@@ -168,6 +167,7 @@ body > header {
   > main {
     position: relative;
     margin-top: $section-padding-top * 2;
+    padding-bottom: $section-padding-bottom * 2;
 
     @include media(">lg") {
       top: $section-padding-top-lg * 2;
