@@ -4,7 +4,7 @@ date: 2019-11-19
 type: help
 ---
 
-The Sand Dollar Project aims to digitize the Bahamian dollar into a blockchain-based currency, also known as Sand Dollars. Anyone can have a Sand Dollar account and enjoy the facilities offered by it. These include the Sand Dollar Card and the Sand Dollar Wallet App.
+The Sand Dollar Project aims to digitize the Bahamian Dollar into a Digital Fiat Currency, also known as Sand Dollars. Anyone can have a Sand Dollar account and enjoy its benefits, including access to a Sand Dollar Card and the Sand Dollar Wallet App.
 
 You should have received your Sand Dollar Card, downloaded the Sand Dollar Wallet App, and paired them together when you first used the Sand Dollar Wallet App. With your card and wallet app linked, you can now use them to transact Sand Dollars.
 
