@@ -1362,6 +1362,7 @@ $(function () {
 
   // Contact form
   $('.cta a').click(function(e) {
+    console.log('dcadfae');
     e.preventDefault();
     $.scrollify.move($(this).attr("href"));
   });
