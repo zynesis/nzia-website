@@ -1327,11 +1327,11 @@ $(function () {
       $(".pagination").find("a[href=\"#" + ref + "\"]").addClass("active");
     },
     afterResize: function () {
-      if ($(window).width() <= 992) {
-        $.scrollify.disable();
-      } else {
-        $.scrollify.enable();
-      }
+      // if ($(window).width() <= 992) {
+      //   $.scrollify.disable();
+      // } else {
+      //   $.scrollify.enable();
+      // }
     },
     afterRender: function () {
       // Pagination
@@ -1352,17 +1352,16 @@ $(function () {
       });
 
       // Disable on mobile
-      if ($(window).width() <= 992) {
-        $.scrollify.disable();
-      } else {
-        $.scrollify.enable();
-      }
+      // if ($(window).width() <= 992) {
+      //   $.scrollify.disable();
+      // } else {
+      //   $.scrollify.enable();
+      // }
     }
   });
 
   // Contact form
   $('.cta a').click(function(e) {
-    console.log('dcadfae');
     e.preventDefault();
     $.scrollify.move($(this).attr("href"));
   });
