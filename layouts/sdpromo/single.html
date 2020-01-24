@@ -56,25 +56,25 @@
                 <div class="benefit-image">
                   {{ readFile $.Params.content.sections.promo.benefits.benefit1.image | safeHTML }}
                 </div>
-                {{ $.Param "content.sections.promo.benefits.benefit1.description" }}
+                {{ $.Param "content.sections.promo.benefits.benefit1.description" | markdownify }}
               </div>
               <div class="benefit col col-lg-6">
                 <div class="benefit-image">
                   {{ readFile $.Params.content.sections.promo.benefits.benefit2.image | safeHTML }}
                 </div>
-                {{ $.Param "content.sections.promo.benefits.benefit2.description" }}
+                {{ $.Param "content.sections.promo.benefits.benefit2.description" | markdownify }}
               </div>
               <div class="benefit col col-lg-6">
                 <div class="benefit-image">
                   {{ readFile $.Params.content.sections.promo.benefits.benefit3.image | safeHTML }}
                 </div>
-                {{ $.Param "content.sections.promo.benefits.benefit3.description" }}
+                {{ $.Param "content.sections.promo.benefits.benefit3.description" | markdownify }}
               </div>
               <div class="benefit col col-lg-6">
                 <div class="benefit-image">
                   {{ readFile $.Params.content.sections.promo.benefits.benefit4.image | safeHTML }}
                 </div>
-                {{ $.Param "content.sections.promo.benefits.benefit4.description" }}
+                {{ $.Param "content.sections.promo.benefits.benefit4.description" | markdownify }}
               </div>
             </div>
           </div>
