@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="{{ $.Param "meta.description" }}">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
+  <title>{{ .Site.Params.title }} &ndash; {{ $.Param "long_title" }}</title>
+  {{ $style := resources.Get "scss/main.scss" | toCSS | postCSS | minify | fingerprint }}
+  <link href="{{ $style.RelPermalink }}" rel="stylesheet">
+</head>
+
+<body>
+
+  <header>
+    <nav class="container">
+      <div class="row row-stretched">
+        <a class="brand" href="/">
+          <img src="/svg/logos/logo-nzia.svg" alt="NZIA" width="100" height="28">
+        </a>
+        <div class="cta">
+          <a href="{{ $.Param "content.cta.url" }}" class="btn primary">{{ $.Param "content.cta.label" }}</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="hero" data-section-name="home">
+      <div class="container">
+        <div class="row">
+          <div class="col col-lg-7">
+            <h1 data-scroll="once" class="mbg1">{{ $.Param "content.sections.hero.headline" }}</h1>
+            <p data-scroll="once" class="mbg1">{{ $.Param "content.sections.hero.body" }}</p>
+            <div class="cta">
+              <a href="{{ $.Param "content.cta.url" }}" class="btn primary">{{ $.Param "content.cta.label" }}</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-detector" data-scroll="toggle(.section-visible, .section-hidden)" data-scroll-showCallback="updateArt(0.7,0.5)" data-scroll-hideCallback="hideLatest()"></div>
+      <img src="/img/art/thank-you.png" alt="art" class="art">
+    </section>
+
+    <section class="promo" data-section-name="promo">
+      <div class="container">
+        <div class="row spb1">
+          <div class="col col-lg-5">
+            <h2 data-scroll="once">{{ $.Param "content.sections.promo.headline" }}</h2>
+          </div>
+          <div class="col col-lg-5 offset-lg-6">
+            <div class="row">
+              <div class="benefit col col-lg-6">
+                <div class="benefit-image">
+                  {{ readFile $.Params.content.sections.promo.benefits.benefit1.image | safeHTML }}
+                </div>
+                {{ $.Param "content.sections.promo.benefits.benefit1.description" }}
+              </div>
+              <div class="benefit col col-lg-6">
+                <div class="benefit-image">
+                  {{ readFile $.Params.content.sections.promo.benefits.benefit2.image | safeHTML }}
+                </div>
+                {{ $.Param "content.sections.promo.benefits.benefit2.description" }}
+              </div>
+              <div class="benefit col col-lg-6">
+                <div class="benefit-image">
+                  {{ readFile $.Params.content.sections.promo.benefits.benefit3.image | safeHTML }}
+                </div>
+                {{ $.Param "content.sections.promo.benefits.benefit3.description" }}
+              </div>
+              <div class="benefit col col-lg-6">
+                <div class="benefit-image">
+                  {{ readFile $.Params.content.sections.promo.benefits.benefit4.image | safeHTML }}
+                </div>
+                {{ $.Param "content.sections.promo.benefits.benefit4.description" }}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-detector" data-scroll="toggle(.section-visible, .section-hidden)" data-scroll-showCallback="updateArt(0.25,0.6)"></div>
+      <img src="/img/art/present.png" alt="art" class="art">
+    </section>
+
+    <section class="apply-now" data-section-name="apply-now">
+      <div class="container">
+        <div class="row spb1">
+          <div class="col col-lg-5">
+            <h2 data-scroll="once">{{ $.Param "content.sections.apply_now.headline" }}</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col col-lg-5">
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfIKIoK-nrXwWI7rVQsfSxyScjwcOf3QxwxNMkUwemxAwOJbg/viewform?embedded=true" width="100%" height="560" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+          </div>
+          <div class="col col-lg-5 offset-lg-1">
+            <h3 data-scroll="once">{{ $.Param "content.sections.contact.headline" }}</h3>
+            <div class="mbg1">{{ $.Param "content.sections.contact.main_contact" }}: <a href="mailto:{{ $.Param "content.sections.contact.email" }}">{{ $.Param "content.sections.contact.email" }}</a></div>
+            <h4 data-scroll="once">{{ $.Param "content.sections.contact.exuma.headline" }}</h4>
+            <div class="mbg1">{{ $.Param "content.sections.contact.exuma.person" }}: {{ $.Param "content.sections.contact.exuma.contact" }}</div>
+            <h4 data-scroll="once">{{ $.Param "content.sections.contact.abaco.headline" }}</h4>
+            <div>{{ $.Param "content.sections.contact.abaco.person" }}: {{ $.Param "content.sections.contact.abaco.contact" }}</div>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-detector" data-scroll="toggle(.section-visible, .section-hidden)" data-scroll-showCallback="hideArt()"></div>
+    </section>
+
+  </main>
+
+  {{ partial "footer.html" . }}
+
+  <div class="swarm"></div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  {{ $scrollify := resources.Get "js/jquery.scrollify.js" }}
+  {{ $scrolltrigger := resources.Get "js/ScrollTrigger.min.js" }}
+  {{ $slick := resources.Get "js/slick.min.js" }}
+  {{ $swarm := resources.Get "js/swarm.js" }}
+  {{ $main := resources.Get "js/main.js" }}
+  {{ $js := slice $scrollify $scrolltrigger $slick $swarm $main | resources.Concat "js/bundle.js" | resources.Fingerprint }}
+  <script src="{{ $js.RelPermalink }}" type="text/javascript"></script>
+  {{ template "_internal/google_analytics_async.html" . }}
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="320px" height="160px" viewBox="0 0 320 160" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
+    <title>network-device</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="100%" y1="50%" x2="0%" y2="50%" id="linearGradient-1">
+            <stop stop-color="#F2ACAC" offset="0%"></stop>
+            <stop stop-color="#E3FFDB" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-2" x="0" y="0" width="320" height="160" rx="8"></rect>
+    </defs>
+    <g id="network-device" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-3" fill="white">
+            <use xlink:href="#path-2"></use>
+        </mask>
+        <rect stroke="url(#linearGradient-1)" stroke-width="4" x="2" y="2" width="316" height="156" rx="8"></rect>
+        <g id="Group-37" mask="url(#mask-3)" stroke="#E7EBD0" stroke-width="2">
+            <g transform="translate(-35.000000, 20.000000)">
+                <line x1="83" y1="43" x2="0" y2="54" id="Stroke-1"></line>
+                <line x1="63" y1="33" x2="0" y2="41" id="Stroke-5"></line>
+                <line x1="121" y1="63" x2="0" y2="80" id="Stroke-9"></line>
+                <line x1="102" y1="53" x2="0" y2="67" id="Stroke-13"></line>
+                <line x1="0" y1="105" x2="160" y2="83" id="Stroke-17"></line>
+                <line x1="141" y1="73" x2="0" y2="92" id="Stroke-21"></line>
+                <line x1="44" y1="23" x2="0" y2="29" id="Stroke-25"></line>
+                <polygon id="Stroke-35" points="160 83.5744993 0 0 0 110 160 88.1275033"></polygon>
+                <line x1="121" y1="94" x2="121" y2="150" id="Path"></line>
+            </g>
+        </g>
+        <g id="Group-30" mask="url(#mask-3)" stroke="#ECCBBD" stroke-width="2">
+            <g transform="translate(171.000000, -60.000000)">
+                <path d="M100.745957,201 L4.18208407,201 C2.40464741,201 0.96402074,199.564036 0.96402074,197.792351 L0.96402074,50.2076489 C0.96402074,48.4359644 2.40464741,47 4.18208407,47 L100.745957,47 C102.523394,47 103.964021,48.4359644 103.964021,50.2076489 L103.964021,197.792351 C103.964021,199.564036 102.523394,201 100.745957,201 Z" id="Stroke-1"></path>
+                <polyline id="Stroke-3" points="70.9640207 52 94.1245146 52 98.9640207 56.8 98.9640207 191.2 94.1245146 196 70.9640207 196"></polyline>
+                <polyline id="Stroke-5" points="34.9640207 196 11.8035269 196 6.96402074 191.2 6.96402074 56.8 11.8035269 52 34.9640207 52"></polyline>
+                <path d="M8.96402074,197.5 C8.96402074,198.880625 7.84464574,200 6.46402074,200 C5.08339574,200 3.96402074,198.880625 3.96402074,197.5 C3.96402074,196.119375 5.08339574,195 6.46402074,195 C7.84464574,195 8.96402074,196.119375 8.96402074,197.5 Z" id="Stroke-11"></path>
+                <path d="M102.964021,197.5 C102.964021,198.880625 101.844646,200 100.464021,200 C99.0833957,200 97.9640207,198.880625 97.9640207,197.5 C97.9640207,196.119375 99.0833957,195 100.464021,195 C101.844646,195 102.964021,196.119375 102.964021,197.5 Z" id="Stroke-13"></path>
+                <polygon id="Stroke-15" points="34.9640207 199 71.9640207 199 71.9640207 50 34.9640207 50"></polygon>
+                <line x1="11.4640207" y1="52" x2="11.4640207" y2="196" id="Stroke-17"></line>
+                <line x1="29.4640207" y1="52" x2="29.4640207" y2="196" id="Stroke-18"></line>
+                <line x1="77.4640207" y1="52" x2="77.4640207" y2="196" id="Stroke-19"></line>
+                <line x1="82.4640207" y1="52" x2="82.4640207" y2="196" id="Stroke-20"></line>
+                <line x1="88.4640207" y1="52" x2="88.4640207" y2="196" id="Stroke-21"></line>
+                <line x1="17.4640207" y1="52" x2="17.4640207" y2="196" id="Stroke-22"></line>
+                <line x1="23.4640207" y1="52" x2="23.4640207" y2="196" id="Stroke-23"></line>
+                <line x1="94.4640207" y1="52" x2="94.4640207" y2="196" id="Stroke-24"></line>
+                <path d="M62.0206052,186 L43.9077773,186 C43.3866136,186 42.9640207,185.585795 42.9640207,185.074228 L42.9640207,179.925772 C42.9640207,179.414205 43.3866136,179 43.9077773,179 L62.0206052,179 C62.541769,179 62.9640207,179.414205 62.9640207,179.925772 L62.9640207,185.074228 C62.9640207,185.585795 62.541769,186 62.0206052,186 Z" id="Stroke-25"></path>
+                <line x1="63.4640207" y1="201" x2="63.4640207" y2="280" id="Stroke-28"></line>
+                <line x1="42.4640207" y1="280" x2="42.4640207" y2="201" id="Stroke-29"></line>
+            </g>
+        </g>
+        <g id="wifi-signal-1" mask="url(#mask-3)" stroke="#EADAC6" stroke-linecap="round" stroke-linejoin="round" stroke-width="3">
+            <g transform="translate(119.000000, 17.000000)" id="Path">
+                <path d="M15.4720019,3.46 L15.4720019,3.46 C-2.49384191,21.4224019 -2.49660191,50.5480019 15.4658255,68.5140019 C15.4678841,68.5160609 15.4699429,68.5181197 15.4720019,68.5201783"></path>
+                <path d="M26.8000004,14.776 L26.8000004,14.776 C15.0858796,26.4914404 15.0858796,45.4845604 26.8000004,57.2000004"></path>
+                <path d="M38.1,26.092 L38.1,26.092 C32.6324,31.55908 32.63192,40.42336 38.0989899,45.891 C38.0993266,45.8913368 38.0996633,45.8916735 38.1,45.8920102"></path>
+            </g>
+        </g>
+        <text id="FREE" mask="url(#mask-3)" font-family="IBMPlexSans-Medium, IBM Plex Sans" font-size="24" font-weight="400" letter-spacing="0.6666666" fill="#E5F3D4">
+            <tspan x="14" y="31">FREE</tspan>
+        </text>
+    </g>
+</svg>

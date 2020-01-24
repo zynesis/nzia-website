@@ -713,6 +713,26 @@ section.get-in-touch {
 
 
 // 
+// Giveaway SD Promo
+// 
+
+.promo {
+  .benefit {
+    margin-bottom: $grid-gutter * 1.5;
+  }
+
+  .benefit-image {
+    margin-bottom: $grid-gutter / 2;
+    svg {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  }
+}
+
+
+// 
 // Footer
 // 
 
