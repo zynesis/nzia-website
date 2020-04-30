@@ -4,11 +4,11 @@ long_title: Enabling transactions for everyone, anywhere, anytime.
 meta:
   description: NZIA enables transactions for everyone, anywhere, anytime.
 content:
-  notice:
-    description: Sand Dollar Promotion is on!
-    cta:
-      label: Apply Now
-      url: /sdpromo
+  # notice:
+  #   description: Sand Dollar Promotion is on!
+  #   cta:
+  #     label: Apply Now
+  #     url: /sdpromo
   sections:
     hero:
       headline: Enabling transactions for everyone, anywhere, anytime.
