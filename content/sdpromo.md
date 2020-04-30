@@ -9,6 +9,8 @@ content:
     label: Apply now!
     url: "#apply-now"
   sections:
+    suspended:
+      body: This promotion is currently suspended in light of the COVID-19 situation.
     hero:
       headline: Sand Dollar Network Application
       body: Thank you Exuma for your support for the launch of Project Sand Dollar! As a token of our appreciation, NZIA is providing a special offer to the first 90 respondents in Exuma, for the free installation of Sand Dollar network devices. This will allow you to have free access directly to the Sand Dollar payment network. For a limited time we are also extending this offer for Abaco as well.

@@ -115,6 +115,10 @@ content:
             title: Chief Financial Officer
             description: Peter has over 10 years of experience serving as CFO of publicly-listed companies in the Korea Stock Exchange, in the network and IT business sectors.
             image: peter_lee
+          - name: Vinay Mohan
+            title: Chief Operating Officer
+            description: Vinay is an entrepreneur and startup leader with 15 years of experience with C-suite mandates in banking, financial services and the public sector. 
+            image: vinay_mohan
         non_human_members:
           - name: Norton Rose Fulbright
             title: Legal Counsel

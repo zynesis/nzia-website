@@ -19,6 +19,9 @@
         <a class="brand" href="/">
           <img src="/svg/logos/logo-nzia.svg" alt="NZIA" width="100" height="28">
         </a>
+        <div class="cta">
+          <a href="{{ $.Param "content.cta.url" }}" class="btn primary">{{ $.Param "content.cta.label" }}</a>
+        </div>
       </div>
     </nav>
   </header>
@@ -27,9 +30,13 @@
 
     <section class="hero" data-section-name="home">
       <div class="container">
-        <div class="row spb1">
+        <div class="row spt1 mtg1">
           <div class="col col-lg-7">
-            <p data-scroll="once" class="mbg1">{{ $.Param "content.sections.suspended.body" }}</p>
+            <h1 data-scroll="once" class="mbg1">{{ $.Param "content.sections.hero.headline" }}</h1>
+            <p data-scroll="once" class="mbg1">{{ $.Param "content.sections.hero.body" }}</p>
+            <div class="cta">
+              <a href="{{ $.Param "content.cta.url" }}" class="btn primary">{{ $.Param "content.cta.label" }}</a>
+            </div>
           </div>
         </div>
       </div>
@@ -75,6 +82,30 @@
       </div>
       <div class="scroll-detector" data-scroll="toggle(.section-visible, .section-hidden)" data-scroll-showCallback="updateArt(0.25,0.6)"></div>
       <img src="/img/art/present.png" alt="art" class="art">
+    </section>
+
+    <section class="apply-now" data-section-name="apply-now">
+      <div class="container">
+        <div class="row spb1">
+          <div class="col col-lg-5">
+            <h2 data-scroll="once">{{ $.Param "content.sections.apply_now.headline" }}</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col col-lg-5 mbg1" style="padding:0;">
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfIKIoK-nrXwWI7rVQsfSxyScjwcOf3QxwxNMkUwemxAwOJbg/viewform?embedded=true" width="100%" height="560" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+          </div>
+          <div class="col col-lg-5 offset-lg-1">
+            <h3 data-scroll="once">{{ $.Param "content.sections.contact.headline" }}</h3>
+            <div class="mbg1">{{ $.Param "content.sections.contact.main_contact" }}: <a href="mailto:{{ $.Param "content.sections.contact.email" }}">{{ $.Param "content.sections.contact.email" }}</a></div>
+            <h4 data-scroll="once">{{ $.Param "content.sections.contact.exuma.headline" }}</h4>
+            <div class="mbg1">{{ $.Param "content.sections.contact.exuma.person" }}: {{ $.Param "content.sections.contact.exuma.contact" }}</div>
+            <h4 data-scroll="once">{{ $.Param "content.sections.contact.abaco.headline" }}</h4>
+            <div>{{ $.Param "content.sections.contact.abaco.person" }}: {{ $.Param "content.sections.contact.abaco.contact" }}</div>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-detector" data-scroll="toggle(.section-visible, .section-hidden)" data-scroll-showCallback="hideArt()"></div>
     </section>
 
   </main>
