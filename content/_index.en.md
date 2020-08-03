@@ -95,10 +95,6 @@ content:
       team:
         headline: Executive Team
         human_members:
-          - name: Simon Kim
-            title: Co-Founder, Managing Director
-            description: Simon has over 20 years of experience architecting and deploying solutions across national infrastructure, communications networking, and international finance industries. 
-            image: simon_kim
           - name: Jay Joe
             title: Co-Founder, Chief Executive Officer
             description: Jay has been building solutions across various industries including risk management, enterprise solutions and advanced security technologies for nuclear and critical national infrastructure.
@@ -111,10 +107,6 @@ content:
           #   title: Chief Legal Officer
           #   description: As a partner of global law firm Norton Rose Fulbright, John is a leader within the firm for blockchain and digital asset projects.
           #   image: john_kim
-          - name: Peter Lee
-            title: Chief Financial Officer
-            description: Peter has over 10 years of experience serving as CFO of publicly-listed companies in the Korea Stock Exchange, in the network and IT business sectors.
-            image: peter_lee
           - name: Vinay Mohan
             title: Chief Operating Officer
             description: Vinay is a management consultant and blockchain startup leader with over 15 years experience delivering C-Suite mandates in banking, financial services and the public sector. 
