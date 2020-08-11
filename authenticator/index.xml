@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Authenticators on NZIA</title>
+    <link>https://nzia.io/authenticator/</link>
+    <description>Recent content in Authenticators on NZIA</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>All Rights Reserved</copyright>
+    <lastBuildDate>Sun, 11 Aug 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://nzia.io/authenticator/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>NZIA Authenticator Privacy Policy</title>
+      <link>https://nzia.io/authenticator/privacy-policy/</link>
+      <pubDate>Sun, 11 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://nzia.io/authenticator/privacy-policy/</guid>
+      <description>NZIA Limited built the NZIA Autheticator app as a Free app. This SERVICE is provided by NZIA Limited at no cost and is intended for use as is.
+This page describes our policies on the collection, use, and disclosure of Personal Information for users of our Service.
+By using our Service, you agree to the collection and use of information in accordance to this policy. The Personal Information that we collect is used for providing and improving the Service.</description>
+    </item>
+    
+  </channel>
+</rss>
