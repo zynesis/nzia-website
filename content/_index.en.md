@@ -99,10 +99,6 @@ content:
             title: Co-Founder, Chief Executive Officer
             description: Jay has been building solutions across various industries including risk management, enterprise solutions and advanced security technologies for nuclear and critical national infrastructure.
             image: jay_joe
-          - name: U-Zyn Chua
-            title: Co-Founder, Chief Technology Officer
-            description: As one of the early contributors to Bitcoin, Ethereum, and Dash projects, U-Zyn is a pioneer in the emergence of blockchain technology.
-            image: uzyn_chua
           # - name: John Kim
           #   title: Chief Legal Officer
           #   description: As a partner of global law firm Norton Rose Fulbright, John is a leader within the firm for blockchain and digital asset projects.
